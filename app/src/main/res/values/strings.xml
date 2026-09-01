@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PingPongScoreBoard</string>
+    <string name="titulo_app">Placar de Ping-Pong</string>
+</resources>
