@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">PingPongScoreBoard</string>
     <string name="titulo_app">Placar de Ping-Pong</string>
+
+    <string name="jogador_a">Jogador A</string>
+    <string name="jogador_b">Jogador B</string>
+    <string name="pontos">Pontos: %1$s</string>
+    <string name="mais_um">+1</string>
+    <string name="reiniciar_partida">Reiniciar partida</string>
+
+    <string name="etapa_remember">1. remember</string>
+    <string name="etapa_mutable_state">2. mutableStateOf</string>
+    <string name="etapa_state_flow">3. StateFlow</string>
+    <string name="etapa_saved_state">4. SavedStateHandle</string>
+
+    <string name="desc_remember">Estado guardado apenas na composição.</string>
+    <string name="desc_mutable_state">Estado guardado no ViewModel, em memória.</string>
+    <string name="desc_state_flow">Estado no ViewModel, exposto como fluxo observável.</string>
+    <string name="desc_saved_state">Estado no ViewModel e também no SavedStateHandle.</string>
 </resources>
