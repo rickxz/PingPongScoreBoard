@@ -9,6 +9,7 @@ O app em si é relativamente simples: dois jogadores, um botão "+1" pra cada um
 - `ui/ComponentesPlacar.kt`: painel do jogador e o corpo do placar, os dois sem estado nenhum para que as quatro etapas consiga reaproveitar esse código.
 - `ui/PlacarRemember.kt`: etapa 1
 - `ui/PlacarMutableState.kt` e `viewmodel/PlacarMutableStateViewModel.kt`: etapa 2
+- `ui/PlacarStateFlow.kt` e `viewmodel/PlacarStateFlowViewModel.kt`: etapa 3
 
 ## Testes
 
@@ -27,3 +28,4 @@ adb shell am kill br.edu.ifsp.scl.sc3038904.pingpongscoreboard
 | --- | --- | --- |
 | `remember` | não sobrevive | não sobrevive |
 | ViewModel + `mutableStateOf` | sobrevive | não sobrevive |
+| ViewModel + `StateFlow` | sobrevive | não sobrevive |
