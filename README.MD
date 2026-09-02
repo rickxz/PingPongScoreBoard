@@ -10,6 +10,7 @@ O app em si é relativamente simples: dois jogadores, um botão "+1" pra cada um
 - `ui/PlacarRemember.kt`: etapa 1
 - `ui/PlacarMutableState.kt` e `viewmodel/PlacarMutableStateViewModel.kt`: etapa 2
 - `ui/PlacarStateFlow.kt` e `viewmodel/PlacarStateFlowViewModel.kt`: etapa 3
+- `ui/PlacarSavedState.kt` e `viewmodel/PlacarSavedStateViewModel.kt`: etapa 4
 
 ## Testes
 
@@ -29,3 +30,4 @@ adb shell am kill br.edu.ifsp.scl.sc3038904.pingpongscoreboard
 | `remember` | não sobrevive | não sobrevive |
 | ViewModel + `mutableStateOf` | sobrevive | não sobrevive |
 | ViewModel + `StateFlow` | sobrevive | não sobrevive |
+| ViewModel + `SavedStateHandle` | sobrevive | sobrevive |
