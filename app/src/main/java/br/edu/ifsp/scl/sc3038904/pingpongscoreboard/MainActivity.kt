@@ -19,7 +19,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun TelaPrincipal(modifier: Modifier = Modifier) {
-    var etapaSelecionada by remember { mutableStateOf(Etapa.REMEMBER) }
+    var etapaSelecionada by rememberSaveable { mutableStateOf(Etapa.REMEMBER) }
 
     Column(
         modifier = modifier
