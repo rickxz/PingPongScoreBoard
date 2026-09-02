@@ -27,10 +27,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarMutableState
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarRemember
+import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarStateFlow
 
 enum class Etapa(@StringRes val rotuloRes: Int) {
     REMEMBER(R.string.etapa_remember),
-    MUTABLE_STATE(R.string.etapa_mutable_state)
+    MUTABLE_STATE(R.string.etapa_mutable_state),
+    STATE_FLOW(R.string.etapa_state_flow)
 }
 
 class MainActivity : ComponentActivity() {
@@ -82,6 +84,7 @@ fun TelaPrincipal(modifier: Modifier = Modifier) {
         when (etapaSelecionada) {
             Etapa.REMEMBER -> PlacarRemember()
             Etapa.MUTABLE_STATE -> PlacarMutableState()
+            Etapa.STATE_FLOW -> PlacarStateFlow()
         }
     }
 }
