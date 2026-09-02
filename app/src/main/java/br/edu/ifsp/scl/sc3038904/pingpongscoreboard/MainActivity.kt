@@ -30,7 +30,7 @@ import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarRemember
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarSavedState
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarStateFlow
 
-enum class Etapa(@StringRes val rotuloRes: Int) {
+enum class Etapa(@param:StringRes val rotuloRes: Int) {
     REMEMBER(R.string.etapa_remember),
     MUTABLE_STATE(R.string.etapa_mutable_state),
     STATE_FLOW(R.string.etapa_state_flow),
