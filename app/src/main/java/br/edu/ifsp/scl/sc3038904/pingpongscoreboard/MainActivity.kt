@@ -24,6 +24,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarMutableState
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui.PlacarRemember
@@ -89,5 +90,13 @@ fun TelaPrincipal(modifier: Modifier = Modifier) {
             Etapa.STATE_FLOW -> PlacarStateFlow()
             Etapa.SAVED_STATE -> PlacarSavedState()
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun TelaPrincipalPreview() {
+    MaterialTheme {
+        TelaPrincipal()
     }
 }

@@ -3,6 +3,7 @@ package br.edu.ifsp.scl.sc3038904.pingpongscoreboard.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -12,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import br.edu.ifsp.scl.sc3038904.pingpongscoreboard.R
 
@@ -80,5 +82,21 @@ fun CorpoPlacar(
         ) {
             Text(text = stringResource(R.string.reiniciar_partida))
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun CorpoPlacarPreview() {
+    MaterialTheme {
+        CorpoPlacar(
+            descricaoAbordagem = stringResource(R.string.desc_remember),
+            pontosJogadorA = 5,
+            pontosJogadorB = 3,
+            aoMarcarPontoJogadorA = {},
+            aoMarcarPontoJogadorB = {},
+            aoReiniciarPartida = {},
+            modifier = Modifier.padding(16.dp)
+        )
     }
 }
